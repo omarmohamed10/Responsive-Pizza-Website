@@ -1,0 +1,775 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOME</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+	
+	$(function(){
+		
+		
+/*'use strict';
+	var winheight=$(window).height(),
+	navbar = $('.navbar').innerHeight();
+	$('.myheader').height(winheight-(navbar));
+	$('.jumbotron').height(winheight-(navbar));
+	*/
+		
+		$("#PI").click(function(){
+	
+		$(".menu-pizza").show();
+		$(".menu-salads").hide();
+		$(".menu-starter").hide();
+		$("#PI").css({'color':'white' , 'background-color':'rgb(162,0,0)'});
+		$("#SA").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		$("#ST").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+	
+		
+	});
+		$("#pi").click(function(){
+	
+		$(".menu-pizza").show();
+		$(".menu-salads").hide();
+		$(".menu-starter").hide();
+		$("#PI").css({'color':'white' , 'background-color':'rgb(162,0,0)'});
+		$("#SA").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		$("#ST").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+	
+		
+	});
+		
+		$("#SA").click(function(){
+		
+		$(".menu-salads").show();
+		$(".menu-pizza").hide();
+		$(".menu-starter").hide();
+		$("#SA").css({'color':'white' , 'background-color':'rgb(162,0,0)'});
+		$("#PI").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		$("#ST").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		
+	
+	});	
+		$("#sa").click(function(){
+		
+		$(".menu-salads").show();
+		$(".menu-pizza").hide();
+		$(".menu-starter").hide();
+		$("#SA").css({'color':'white' , 'background-color':'rgb(162,0,0)'});
+		$("#PI").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		$("#ST").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		
+	
+	});	
+		
+		$("#ST").click(function(){
+		
+		$(".menu-starter").show();
+		$(".menu-salads").hide();
+		$(".menu-pizza").hide();
+		$("#ST").css({'color':'white' , 'background-color':'rgb(162,0,0)'});
+		$("#PI").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		$("#SA").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+	
+	});
+		$("#st").click(function(){
+		
+		$(".menu-starter").show();
+		$(".menu-salads").hide();
+		$(".menu-pizza").hide();
+		$("#ST").css({'color':'white' , 'background-color':'rgb(162,0,0)'});
+		$("#PI").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+		$("#SA").css({'color':'rgb(162,0,0)' , 'background-color':'white'});
+	
+	});
+		
+		
+		var name = document.forms["myform"]["name"];
+		var phone = document.forms["myform"]["phone"];
+		var people = document.forms["myform"]["people"];
+		var date = document.forms["myform"]["date"];
+		var message = document.forms["myform"]["message"];
+		
+		function Validate(){
+			if(name == ""){
+				name.style.border = "1px solid red";
+				document.getElementById("name-div").style.color="red";
+				name.focus();
+				return false;
+			}
+			if(phone == ""){
+				phone.style.border = "1px solid red";
+				document.getElementById("phone-div").style.color="red";
+				phone.focus();
+				return false;
+			}
+			if(people == ""){
+				people.style.border = "1px solid red";
+				document.getElementById("people-div").style.color="red";
+				people.focus();
+				return false;
+			}
+			if(date == ""){
+				date.style.border = "1px solid red";
+				document.getElementById("date-div").style.color="red";
+				date.focus();
+				return false;
+			}
+			if(message == ""){
+				message.style.border = "1px solid red";
+				document.getElementById("message-div").style.color="red";
+				message.focus();
+				return false;
+			}
+			
+			
+		}
+		
+
+	
+});
+	
+	
+</script>
+</head>
+
+<body>
+		
+<!---------------start navbar------------>	
+	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#ho">PIZZA TIME</a>
+	
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+	
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	  
+    <ul class="navbar-nav">
+		
+      <li class="nav-item active">
+        <a class="nav-link" href="#ho">Home <span class="sr-only">(current)</span></a>
+      </li>
+		
+		  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MENU
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#mu" id="pi">PIZZA</a>
+          <a class="dropdown-item" href="#mu" id="sa">SALADS</a>
+          <a class="dropdown-item" href="#mu" id="st">STARTER</a>
+        </div>
+      </li>
+		
+      <li class="nav-item">
+        <a class="nav-link" href="#ab">ABOUT</a>
+      </li>
+		
+      <li class="nav-item">
+        <a class="nav-link" href="#op">OPENING HOURS</a>
+      </li>
+		
+		<li class="nav-item">
+        <a class="nav-link" href="#lo">OUR LOCATION</a>
+      </li>
+		
+		<li class="nav-item">
+        <a class="nav-link" href="#co">CONTACT US</a>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+<!---------------end navbar------------>
+	
+	
+<!---------------start header----------->
+<a id="ho"></a>
+<header>
+<div class="myheader">
+  <div class="jumbotron">
+  <h1 class="display-1">PIZZA CRUST</h1>
+	<h2 class="display-4">NOW! PIZZA TIME</h2>
+	  <p class="lead"><strong>LET'S MAKE AN ORDER</strong></p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#co" role="button">MAKE AN ORDER</a>
+  </p>
+</div>
+</div>	
+</header>
+<!---------------end header----------->
+	
+	
+<!----------------------start menu-section--------------------->
+	
+	<a id="mu"></a>
+	
+	<div class="menu-section w-100">
+	
+	 <h1 class="display-3 text-center">THE MENU</h1>
+		
+		<br><br>
+	  	<ul class="nav nav-pills nav-fill">
+			
+          <li class="nav-item">
+             <a class="nav-link active" href="#mu" id="PI">PIZZA</a>
+         </li>
+			
+         <li class="nav-item">
+            <a class="nav-link" href="#mu" id="SA">SALADS</a>
+         </li>
+			
+         <li class="nav-item">
+            <a class="nav-link" href="#mu" id="ST">STARTER</a>
+         </li>
+  
+       </ul>
+		<br>
+		<div class="menu-types w-100">
+			<!------------------------start menu-pizza--------------------->
+		<div class="menu-pizza">
+		<div class="container">
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Margherita</h3>
+		<br>
+		<a href="images/pizza-margherita.jpg" target="_blank"><img src="images/pizza-margherita.jpg" width="200px" height="120px" alt="Margherita" title="Margherita"></a>
+		<p class="lead">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+		<div class="price">$12.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+		
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Formaggio</h3>
+		<br>
+		<a href="images/formaggio.jpg" target="_blank"><img src="images/formaggio.jpg" width="200px" height="120px" alt="Margherita" title="Formaggio">	</a>
+		<p class="lead">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+		<div class="price">$15.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+		
+		 <div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Chicken</h3>
+		<br>
+		<a href="images/Chicken.jpg" target="_blank"><img src="images/Chicken.jpg" width="200px" height="120px" alt="Margherita" title="Chicken"></a>
+		<p class="lead">Fresh tomatoes, mozzarella, chicken, onions</p>
+		<div class="price">$20</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Pineapple 'o'clock</h3>
+		<br>
+		<a href="images/Pineapple'o'clock.jpg" target="_blank"><img src="images/Pineapple'o'clock.jpg" width="200px" height="120px" alt="Margherita" title="Pineapple'o'clock">	</a>
+		<p class="lead">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+		<div class="price">$17</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+		
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Meat Town</h3>
+		<br>
+		<a href="images/Meat Town.jpg" target="_blank"><img src="images/Meat Town.jpg" width="200px" height="120px" alt="Margherita" title="Meat Town"></a>	
+		<p class="lead">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+		<div class="price">$25</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Parma</h3>
+		<br>
+		<a href="images/Parma.jpg" target="_blank"><img src="images/Parma.jpg" width="200px" height="120px" alt="Margherita" title="Parma">	</a>
+		<p class="lead">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+		<div class="price">$13.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+				
+		
+		</div>
+		
+		
+		</div>
+			<!------end menu-pizza---->
+			
+			<!------start menu-salads---->
+	 <div class="menu-salads">
+		<div class="container">
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Lasagna</h3>
+		<br>
+		<a href="images/Lasagna.jpg" target="_blank"><img src="images/Lasagna.jpg" width="200px" height="120px" alt="Margherita" title="Lasagna"></a>	
+		<p class="lead">Special sauce, mozzarella, parmesan, ground beef</p>
+		<div class="price">$13.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+		
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Ravioli</h3>
+		<br>
+		<a href="images/Ravioli.jpeg" target="_blank"><img src="images/Ravioli.jpeg" width="200px" height="120px" alt="Margherita" title="Ravioli"></a>
+		<p class="lead">Ravioli filled with cheese</p>
+		<div class="price">$11.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+		
+		 <div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Spaghetti Classica</h3>
+		<br>
+		<a href="images/Spaghetti Classica.jpg" target="_blank"><img src="images/Spaghetti Classica.jpg" width="200px" height="120px" alt="Margherita" title="Spaghetti"></a>
+		<p class="lead">Fresh tomatoes, onions, ground beef</p>
+		<div class="price">$11</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Seafood pasta</h3>
+		<br>
+		<a href="images/Seafood pasta.jpg" target="_blank"><img src="images/Seafood pasta.jpg" width="200px" height="120px" alt="Margherita" title="Seafood pasta"></a>
+		<p class="lead">Salmon, shrimp, lobster, garlic</p>
+		<div class="price">$25.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+		
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Afghan salad</h3>
+		<br>
+		<a href="images/Afghan salad.jpg" target="_blank"><img src="images/Afghan salad.jpg" width="200px" height="120px" alt="Margherita" title="Afghan salad"></a>	
+		<p class="lead">Prepared with the primary ingredients of tomato, cucumber, onion and carrot</p>
+		<div class="price">$11.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Arab salad</h3>
+		<br>
+		<a href="images/Arab salad.jpg" target="_blank"><img src="images/Arab salad.jpg" width="200px" height="120px" alt="Margherita" title="Arab salad"></a>	
+		<p class="lead">Combines many different vegetables and spices</p>
+		<div class="price">$8.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+					
+		</div>
+			
+		</div>
+			<!------end menu-salads---->
+			
+			<!------start menu-starter---->
+	 <div class="menu-starter">
+		<div class="container">
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Today's Soup</h3>
+		<br>
+		<a href="images/Soup.jpg" target="_blank"><img src="images/Soup.jpg" width="200px" height="120px" alt="Margherita" title="soup"></a>	
+		<p class="lead">Ask the waiter</p>
+		<div class="price">$5.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+		
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Bruschetta</h3>
+		<br>
+		<a href="images/Bruschetta.jpg" target="_blank"><img src="images/Bruschetta.jpg" width="200px" height="120px" alt="Margherita" title="Bruschetta"></a>	
+		<p class="lead">Bread with pesto, tomatoes, onion, garlic</p>
+		<div class="price">$8.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+		
+		 <div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Garlic bread</h3>
+		<br>
+		<a href="images/Garlic bread.jpg" target="_blank"><img src="images/Garlic bread.jpg" width="200px" height="120px" alt="Margherita" title="Garlic bread"></a>	
+		<p class="lead">Grilled ciabatta, garlic butter, onions</p>
+		<div class="price">$9.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>	
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Tomozzarella</h3>
+		<br>
+		<a href="images/Tomozzarella.jpg" target="_blank"><img src="images/Tomozzarella.jpg" width="200px" height="120px" alt="Margherita" title="Tomozzarella"></a>	
+		<p class="lead">Tomatoes and mozzarella</p>
+		<div class="price">$10.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+		
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Acquacotta</h3>
+		<br>
+		<a href="images/Acquacotta.jpg" target="_blank"><img src="images/Acquacotta.jpg" width="200px" height="120px" alt="Margherita" title="Acquacotta"></a>	
+		<p class="lead">its primary ingredients were water, stale bread, tomato, olive oil[4] and any spare vegetables</p>
+		<div class="price">$7.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+			
+		<div class="row">
+			
+		<div class="col-sm-12">
+			
+		<h3 class="display-2">Avocado soup</h3>
+		<br>
+		<a href="images/Avocado soup.jpg" target="_blank"><img src="images/Avocado soup.jpg" width="200px" height="120px" alt="Margherita" title="Avocado soup"></a>	
+		<p class="lead">Can be prepared and served as a cold or hot soup</p>
+		<div class="price">$11.50</div>
+		<hr>
+			
+		</div>	
+
+		</div>
+					
+		</div>
+			
+		</div>
+			<!------end menu-starter---->
+			
+	  </div>
+	
+	</div>
+	
+<!---------------end menu-section----------->
+
+	<!---------------start about us----------->
+	<a id="ab"></a>
+	<div class="about text-center">
+	
+	<h1 class="display-3">ABOUT US</h1>
+	<p class="lead">The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<img src="images/onepage_restaurant.jpg" alt="pizza restaurant" width="80%">
+	<br><br><br>
+		<a id="op"></a>
+		<div class="container">
+		
+		<div class="row">
+			
+			<div class="col-sm-12">
+			
+			
+			<h2>OPENING HOURS</h2>
+			
+			</div>
+			
+			</div>
+			<br><br>
+			<div class="row">
+			
+			<div class="col-sm-6 col-sm-6">
+			
+			
+			<h4>Mon & Tue CLOSED</h4>
+			
+			</div>
+			
+			<div class="col-sm-6 col-sm-6">
+			
+			
+			<h4>Friday 10:00 - 12:00</h4>
+			
+			</div>
+			
+			</div>
+			<br>
+				<div class="row">
+			
+			<div class="col-sm-6 col-sm-6">
+			
+			
+			<h4>Wednesday 10.00 - 24.00</h4>
+			
+			</div>
+			
+			<div class="col-sm-6 col-sm-6">
+			
+			
+			<h4>Saturday 10:00 - 23:00</h4>
+			
+			</div>
+			
+			</div>
+			<br>
+			<div class="row">
+			
+			<div class="col-sm-6 col-sm-6">
+			
+			
+			<h4>Thursday 10:00 - 24:00</h4>
+			
+			</div>
+			
+			<div class="col-sm-6 col-sm-6">
+			
+			
+			<h4>Sunday Closed</h4>
+			
+			</div>
+			
+			</div>
+		
+		</div>
+	
+	</div>
+	
+	<!---------------end about us----------->
+	
+	<!---------------start location----------->
+	<a id="lo"></a>
+	
+	<div class="location">
+	<br>
+	<div class="container">
+		
+		<div class="row">
+		
+		<div class="col-md-6 col-sm-12">
+			
+	<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110600.56774528527!2d30.874314558203146!3d29.971734499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145856f7ac77716d%3A0x131191b9ef6b3a8e!2sPizza+Hut!5e0!3m2!1sen!2seg!4v1516370260238" frameborder="0" style="border:0" allowfullscreen></iframe>			
+  </div>
+			
+		
+			
+		</div>
+		
+		<div class="col-md-6 col-sm-12">
+			
+			<div class="row">
+			
+			<div class="col-sm-6">
+				
+			<img src="images/location.png" alt="location">
+	 			
+				
+			</div>
+			
+			<div class="col-sm-6">
+				
+			<p class="lead" style="color: white;">Giza Governorate, 6-october</p>
+	 			
+				
+			</div>
+			
+			</div>
+				<div class="row">
+			
+			<div class="col-sm-6">
+				
+		
+			<img src="images/call-answer.png" alt="location">
+	 			
+				
+			</div>
+			<div class="col-sm-6">
+				
+			<p class="lead" style="color: white;">19000</p>
+		
+	 			
+				
+			</div>
+			
+			</div>
+				<div class="row">
+			
+			<div class="col-sm-6">
+				
+		
+			<img src="images/mail.png" alt="location">
+	 			
+				
+			</div>
+			<div class="col-sm-6">
+				
+			<p class="lead" style="color: white;">www.pizzahut.com</p>
+						
+				
+			</div>
+			
+			</div>
+			
+		</div>
+			
+		</div>
+		
+		
+		</div>
+	
+	<br>
+	</div>
+	<!---------------end location----------->
+	
+	
+	
+	<!---------------start contact us----------->
+	
+	
+	<a id="co"></a>
+	
+	<footer class="contact">
+	 
+		<div class="container-fluid  blacking">
+		<br>
+		<h4 class="display-4 text-center">CONTACT US</h4>
+		<br>
+		
+	     <p class="lead text-left" style="color: white">Find us at some address at some place or call us at 05050515-122330.</p>
+		<p class="lead text-left" style="color: white">FYI! We offer full-service catering for any event, large or small.</p>
+		<p class="lead text-left" style="color: white">We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+	   <p class="lead text-left" style="color: white"><strong style="font-size: 25px;">Reserve </strong>a table, ask for today's special or just send us a message:</p>
+	
+		<br><br>
+		
+		
+		<form name="myform" onSubmit="return Validate()">
+         <div class="form-row" id="name-div">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="NAME" name="name">
+            </div>
+           </div>
+			<br>
+			  <div class="form-row" id="phone-div">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="PHONE NUMBER" name="phone">
+            </div>
+           </div>
+			<br>
+			  <div class="form-row" id="people-div">
+            <div class="col">
+              <input type="number" class="form-control" placeholder="HOW MANY PEOPLE" name="people">
+            </div>
+           </div>
+			<br>
+			  <div class="form-row" id="date-div">
+            <div class="col">
+              <input type="datetime-local" class="form-control" name="date">
+            </div>
+           </div>
+			<br>
+			  <div class="form-row" id="message-div">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="MESSAGE/ SPECIAL REQUIREMENTS" name="message">
+            </div>
+           </div>
+			
+			<input class="btn btn-primary" type="submit" value="SEND MESSAGE">
+             <br><br><br>
+		</form>
+		</div>
+	</footer>
+	<!---------------end contact us----------->
+	
+	
+	
+	
+	
+	</body>
+	
+</html>
